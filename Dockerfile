@@ -36,4 +36,16 @@ RUN set -x \
 	
 EXPOSE 8080
 
+RUN mkdir /myWebApp
+COPY /var/deployment/ /myWebApp
+RUN cd /myWebApp
+WORKDIR /myWebApp/
+RUN pwd
+RUN ls -l
+# check if ROOT.war has been built or not
+#----------------------------------------------------------------------------------------------------------------------------------------------
+RUN find / -name ROOT.war -print
+RUN rm -r /usr/local/tomcat/webapps/*
+RUN cp -R ./* /usr/local/tomcat/webapps/
+RUN ls -l /usr/local/tomcat/webapps/
 ENTRYPOINT ["catalina.sh", "run"]
