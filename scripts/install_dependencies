@@ -1,4 +1,4 @@
 #!/bin/bash
 
-yum install tomcat7 tomcat7-webapps
+yum install -y docker
 
