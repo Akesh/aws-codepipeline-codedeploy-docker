@@ -1,3 +1,4 @@
 #!/bin/bash
 
-docker build -t webapp-demo /Dockerfile
+find /
+docker build -t webapp-demo /var/deployment/Dockerfile
