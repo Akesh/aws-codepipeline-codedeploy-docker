@@ -3,6 +3,8 @@ os: linux
 files:
   - source: /target/
     destination: /var/deployment/
+  - source: /Dockerfile
+    destination: /var/Docker/
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
