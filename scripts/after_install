@@ -1,3 +1,4 @@
 #!/bin/bash
 
-docker build -t webapp-demo /var/Docker/Dockerfile
+cp -R /var/Docker/Dockerfile /usr/local
+docker build -t webapp-demo /usr/local/Dockerfile
