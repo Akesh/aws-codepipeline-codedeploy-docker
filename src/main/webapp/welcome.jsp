@@ -8,6 +8,6 @@
 </head>
 <body style="background-color: #eee;">
 		<h2 style="text-align: center">Welcome to Code pipeline Demo</h2>
-		<h3 style="text-align: center">Web application synced by Code Pipeline, built by Jenkins and deployed by Code Deploy - Updated</h3>
+		<h3 style="text-align: center">Web application synced by Code Pipeline, built by Jenkins and deployed by Code Deploy</h3>
 </body>
 </html>
