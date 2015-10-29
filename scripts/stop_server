@@ -4,6 +4,6 @@ if [[ $(docker ps | grep mydocker) ]]; then
   docker stop mydocker  
 fi
 
-if [[ $(docker ps -a -q | grep mydocker) ]]; then
+if [[ $(docker ps -a | grep mydocker) ]]; then
   docker rm --force mydocker
 fi 
